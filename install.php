@@ -782,7 +782,7 @@ function create_table($suffix, $columns, $table_args = "") {
 
 	$query = "CREATE TABLE `$table_name` (\n"
 		.$columns
-		.") ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci $table_args;\n";
+		.") ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci $table_args;\n";
 
 	$dbh->query($query)
 		or db_error($dbh, "Error creating table `$table_name`.",

@@ -90,4 +90,5 @@ $html = tag('html', attrs("lang=\"$phpc_lang\""),
 echo '<!DOCTYPE html>', "\n", $html->toString();
 echo 'try again';
 echo 'staging';
+echo 'staging again';
 ?>
